@@ -27,7 +27,7 @@
         <!--Guessing Game-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="numberguess" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NumberGuess2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -37,6 +37,7 @@
                                 <state key="normal" title="Guess"/>
                                 <connections>
                                     <action selector="ontouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epo-aO-6SA"/>
+                                    <segue destination="qSo-LI-EWt" kind="show" id="za2-9B-KhM"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-mN-s8d">
@@ -97,7 +98,7 @@
                         <outlet property="emoji" destination="t2M-A7-QWs" id="tQj-bu-ndY"/>
                         <outlet property="guessmeButton" destination="uNh-e5-kRM" id="3VB-eB-cqS"/>
                         <outlet property="message" destination="Gdr-mN-s8d" id="N4e-ay-6RE"/>
-                        <outlet property="texfield" destination="WsM-Pw-DKh" id="qR9-5B-KjY"/>
+                        <outlet property="textfield" destination="WsM-Pw-DKh" id="qR9-5B-KjY"/>
                         <outlet property="trys" destination="MJQ-OW-ZmS" id="D0J-C6-CqO"/>
                     </connections>
                 </viewController>
@@ -122,6 +123,9 @@
             <point key="canvasLocation" x="926" y="96"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bmY-Mu-Mdd"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="45088086-940Smiley_Harmonie_Thinkstock.jpg" width="703.5" height="673.5"/>
         <systemColor name="systemBackgroundColor">
