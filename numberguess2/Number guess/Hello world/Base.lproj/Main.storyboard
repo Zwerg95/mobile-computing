@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hello_world" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNh-e5-kRM">
+                                <rect key="frame" x="184" y="433" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ontouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Epo-aO-6SA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdr-mN-s8d">
+                                <rect key="frame" x="207" y="485.5" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number " textAlignment="natural" minimumFontSize="19" translatesAutoresizingMaskIntoConstraints="NO" id="WsM-Pw-DKh">
+                                <rect key="frame" x="167" y="361" width="84" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Anzahl der Versuche: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJQ-OW-ZmS">
+                                <rect key="frame" x="34" y="85.5" width="166" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="45088086-940Smiley_Harmonie_Thinkstock.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="t2M-A7-QWs">
+                                <rect key="frame" x="-262" y="173" width="938" height="163"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gdr-mN-s8d" firstAttribute="firstBaseline" secondItem="uNh-e5-kRM" secondAttribute="baseline" constant="48" id="2At-Xb-GxT"/>
+                            <constraint firstItem="Gdr-mN-s8d" firstAttribute="top" secondItem="uNh-e5-kRM" secondAttribute="bottom" constant="22.5" id="Uza-kg-79M"/>
+                            <constraint firstItem="t2M-A7-QWs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VPC-5q-kOe"/>
+                            <constraint firstItem="Gdr-mN-s8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vyy-XD-6Xq"/>
+                            <constraint firstItem="WsM-Pw-DKh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="2" id="cJm-5N-xk6"/>
+                            <constraint firstItem="uNh-e5-kRM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m3c-C9-b2t"/>
+                            <constraint firstItem="uNh-e5-kRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oS2-ei-ckh"/>
+                            <constraint firstItem="WsM-Pw-DKh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-70" id="sqv-tE-HCK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emoji" destination="t2M-A7-QWs" id="tQj-bu-ndY"/>
+                        <outlet property="message" destination="Gdr-mN-s8d" id="N4e-ay-6RE"/>
+                        <outlet property="texfield" destination="WsM-Pw-DKh" id="qR9-5B-KjY"/>
+                        <outlet property="trys" destination="MJQ-OW-ZmS" id="D0J-C6-CqO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="45088086-940Smiley_Harmonie_Thinkstock.jpg" width="703.5" height="673.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
